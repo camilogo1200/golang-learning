@@ -56,6 +56,28 @@ Assigning untyped constants
 ===================================================
 */
 
+/*
+Constant enumeration
+=====================================================
+
+create numerically  increasing enumerated integers values, simply assign the pre declared constant value iota
+to a constant identifier.
+
+*/
+
+const (
+	StarHyperGiant = iota
+	StarSuperGiant
+	StarBrightGiant
+	StarGiant
+	StarSubGiant
+	StarDwarf
+	StarSubDwarf
+	StarWhiteDwarf
+	StarRedDwarf
+	StarBrownDwarf
+)
+
 func main() {
 	var u1 float32 = m2
 	var u2 float64 = m2
@@ -65,5 +87,7 @@ func main() {
 	fmt.Println(u1)
 	fmt.Println(u2)
 	fmt.Println(u3)
+
+	fmt.Println("enum => ", StarBrightGiant, StarBrownDwarf)
 
 }
